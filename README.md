@@ -32,3 +32,8 @@ While providing wide variety of education and training content, our users are gi
 - Intagram for metaverse: https://www.instagram.com/zero2hero.training
 - Intagram for training: https://www.instagram.com/zero2hero.metaverse
 - LinkedIn: https://www.linkedin.com/company/zero2hero-meta
+
+# Trademarks
+
+- Trade Mark No: UK00003742595
+- Trade Mark No: UK00003733188
