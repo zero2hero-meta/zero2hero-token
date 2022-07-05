@@ -31,4 +31,4 @@ While providing wide variety of education and training content, our users are gi
 - Twitter: https://twitter.com/zero2hero_uk
 - Intagram for metaverse: https://www.instagram.com/zero2hero.training
 - Intagram for training: https://www.instagram.com/zero2hero.metaverse
-- LinkedIn: https://www.linkedin.com/company/z2hit
+- LinkedIn: https://www.linkedin.com/company/zero2hero-meta
