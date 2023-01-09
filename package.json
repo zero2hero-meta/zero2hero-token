@@ -1,0 +1,33 @@
+{
+  "name": "zero2hero-token",
+  "version": "1.0.0",
+  "description": "Solidity smart contracts for the zero2hero Metaverse and zero2hero Token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zero2hero-meta/zero2hero-token.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zero2hero-meta/zero2hero-token/issues"
+  },
+  "homepage": "https://github.com/zero2hero-meta/zero2hero-token#readme",
+  "devDependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@openzeppelin/contracts-upgradeable": "^4.6.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@openzeppelin/truffle-upgrades": "^1.15.0",
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "truffle-flatten": "^1.0.8",
+    "truffle-plugin-verify": "^0.5.20"
+  }
+}

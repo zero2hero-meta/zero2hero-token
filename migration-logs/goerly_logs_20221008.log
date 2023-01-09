@@ -1,0 +1,77 @@
+❯ truffle migrate --network dashboard                                                                                                               05:34:09 pm
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Starting migrations...
+======================
+> Network name:    'dashboard'
+> Network id:      5
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x1d2cbcaa061b57e79f175253abc15b094712191db274cdfb06be4280c25ba02bsage.
+   > Blocks: 3            Seconds: 28
+   > contract address:    0x1E9d09355EA8eBa43166aA8C95fe0E7252a5745f
+   > block number:        7734538
+   > block timestamp:     1665246888
+   > account:             0x1069dDE6b0fdF9b17b69759f77D5d964C4791638
+   > balance:             0.239806014967062095
+   > gas used:            250154 (0x3d12a)
+   > gas price:           2.500000022 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000625385005503388 ETH
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.000625385005503388 ETH
+
+
+2_deploy_contract.js
+====================
+
+   Deploying 'ERC1967Proxy'
+   ------------------------
+   > transaction hash:    0x1c82c48618699ca4302f9b9ece839eeaa609908ae2061b0c56a66bf54647611esage.
+   > Blocks: 1            Seconds: 20
+   > contract address:    0xFDCE2d2A34071F69D6F3994f134e2478Cc90078b
+   > block number:        7734542
+   > block timestamp:     1665246936
+   > account:             0x1069dDE6b0fdF9b17b69759f77D5d964C4791638
+   > balance:             0.238819377458425598
+   > gas used:            348742 (0x55246)
+   > gas price:           2.500000022 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000871855007672324 ETH
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.000871855007672324 ETH
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.001497240013175712 ETH
+
+
+~/projects/zero2hero-token main* ❯ npx truffle run verify Zero2HeroToken --network dashboard                                                                                  1m 59s 05:36:13 pm
+Verifying Zero2HeroToken
+Verifying proxy implementation at 0x28cdf6c0d67342668a4d34c62597dd073e21f539
+Contract source code already verified: https://goerli.etherscan.io/address/0xFDCE2d2A34071F69D6F3994f134e2478Cc90078b#code
+Successfully verified 1 contract(s).
+~/projects/zero2hero-token main* ❯ const s = await Zero2HeroToken.deployed()                                                                                                      7s 05:37:50 pm
+function> s.address
+~/projects/zero2hero-token main* ❯ truffle console --network dashboard                                                                                                               05:38:06 pm
+truffle(dashboard)> const s = await Zero2HeroToken.deployed()
+undefined
+truffle(dashboard)> s.address
+'0xFDCE2d2A34071F69D6F3994f134e2478Cc90078b'

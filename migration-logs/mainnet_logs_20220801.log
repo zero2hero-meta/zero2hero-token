@@ -1,0 +1,92 @@
+~/projects/zero2hero-token main* ❯ truffle migrate --network dashboard                                                                                                                    06:31:13 pm
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Starting migrations...
+======================
+> Network name:    'dashboard'
+> Network id:      1
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x6f7164c2e3112f41f9658d2fa190564a7ba63986c5790dcaa08f90819c3794c2sage.
+   > Blocks: 2            Seconds: 20
+   > contract address:    0xDD5582C785e462A10cB9dE908211BBef6E96Ab9C
+   > block number:        15258016
+   > block timestamp:     1659375100
+   > account:             0x885c325e57821EF85eB3a823E230192743173085
+   > balance:             3.509047005654533572
+   > gas used:            250154 (0x3d12a)
+   > gas price:           24.175596653 gwei
+   > value sent:          0 ETH
+   > total cost:          0.006047622205134562 ETH
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.006047622205134562 ETH
+
+
+2_deploy_contract.js
+====================
+
+   Deploying 'Zero2HeroToken'
+   --------------------------
+   > transaction hash:    0x435a2c6705791ad906ea73fe4ca26a9a7c57c83daa3c520aa6715edd4c026bd2sage.
+   > Blocks: 2            Seconds: 36
+   > contract address:    0x479F523E99c7418933774f415794075DD0160B7D
+   > block number:        15258022
+   > block timestamp:     1659375169
+   > account:             0x885c325e57821EF85eB3a823E230192743173085
+   > balance:             3.436274728379163233
+   > gas used:            3102486 (0x2f5716)
+   > gas price:           23.135094452 gwei
+   > value sent:          0 ETH
+   > total cost:          0.071776306646007672 ETH
+
+
+   Deploying 'ERC1967Proxy'
+   ------------------------
+   > transaction hash:    0x2e9b8e30c9411d061e0eeaf26811df6eb78ea9cb7aa3085186ea8c57c8c81748sage.
+   > Blocks: 11           Seconds: 184
+   > contract address:    0x99b37475ebd7Dce551e6A9248673040f1d8F712f
+   > block number:        15258034
+   > block timestamp:     1659375369
+   > account:             0x885c325e57821EF85eB3a823E230192743173085
+   > balance:             3.426996491376827259
+   > gas used:            348742 (0x55246)
+   > gas price:           26.604874097 gwei
+   > value sent:          0 ETH
+   > total cost:          0.009278237002335974 ETH
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.081054543648343646 ETH
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.087102165853478208 ETH
+
+
+~/projects/zero2hero-token main* ❯               
+
+
+~/projects/zero2hero-token main\* ❯ npx truffle run verify Zero2HeroToken --network dashboard 9s 06:37:17 pm
+Verifying Zero2HeroToken
+Verifying proxy implementation at 0x479f523e99c7418933774f415794075dd0160b7d
+Pass - Verified: https://etherscan.io/address/0x99b37475ebd7Dce551e6A9248673040f1d8F712f#code
+Successfully verified 1 contract(s).
+
+
+Logic Address: 0x479f523e99c7418933774f415794075dd0160b7d
+Proxy address: 0x99b37475ebd7Dce551e6A9248673040f1d8F712f

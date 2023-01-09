@@ -1,0 +1,156 @@
+~/projects/zero2hero-token main* ❯ npx truffle migrate --network rinkeby --reset                                                                                                                           05:59:41 pm
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 29999972 (0x1c9c364)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        11012466
+   > block timestamp:     1657645194
+   > account:             0x1069dDE6b0fdF9b17b69759f77D5d964C4791638
+   > balance:             0.997823404491091062
+   > gas used:            250154 (0x3d12a)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000625385002001232 ETH
+
+   -------------------------------------
+   > Total cost:     0.000625385002001232 ETH
+
+
+2_deploy_contract.js
+====================
+
+   Deploying 'Zero2HeroToken'
+   --------------------------
+   > block number:        11012468
+   > block timestamp:     1657645195
+   > account:             0x1069dDE6b0fdF9b17b69759f77D5d964C4791638
+   > balance:             0.98995240696590387
+   > gas used:            3102486 (0x2f5716)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.007756215024819888 ETH
+
+
+   Deploying 'ERC1967Proxy'
+   ------------------------
+   > block number:        11012469
+   > block timestamp:     1657645196
+   > account:             0x1069dDE6b0fdF9b17b69759f77D5d964C4791638
+   > balance:             0.989080551963113934
+   > gas used:            348742 (0x55246)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000871855002789936 ETH
+
+Ownership transferred to 0xFFAf247326a93a32AD867E49bE325CEF438D9007
+   -------------------------------------
+   > Total cost:     0.008628070027609824 ETH
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.009253455029611056 ETH
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 29999972 (0x1c9c364)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xeeacf962b1e5c456da760f244e1bea6ab8ded12b2c33c83d638727adeba62257
+   > Blocks: 0            Seconds: 4
+   > contract address:    0xC93DBd8F2ac927F9f7B54C5127bEA09d571Ef0E3
+   > block number:        11012465
+   > block timestamp:     1657645205
+   > account:             0x1069dDE6b0fdF9b17b69759f77D5d964C4791638
+   > balance:             0.997823404490840908
+   > gas used:            250154 (0x3d12a)
+   > gas price:           2.500000009 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000625385002251386 ETH
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.000625385002251386 ETH
+
+
+2_deploy_contract.js
+====================
+
+   Deploying 'Zero2HeroToken'
+   --------------------------
+   > transaction hash:    0xc7a96835c3e8337cc953f33c9209eb7adb541da661591e8e10b15bb34f0e6188
+   > Blocks: 0            Seconds: 12
+   > contract address:    0xCad26e2AE545F9C8da6575aE91FBA685f3EC9257
+   > block number:        11012467
+   > block timestamp:     1657645235
+   > account:             0x1069dDE6b0fdF9b17b69759f77D5d964C4791638
+   > balance:             0.989952406959356918
+   > gas used:            3102486 (0x2f5716)
+   > gas price:           2.50000001 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00775621503102486 ETH
+
+
+   Deploying 'ERC1967Proxy'
+   ------------------------
+   > transaction hash:    0xa1e7483b47242bdc0b91ec9f5e64bd8f783c905372c78e46d748852b21030185
+   > Blocks: 0            Seconds: 12
+   > contract address:    0xFDCE2d2A34071F69D6F3994f134e2478Cc90078b
+   > block number:        11012468
+   > block timestamp:     1657645250
+   > account:             0x1069dDE6b0fdF9b17b69759f77D5d964C4791638
+   > balance:             0.989080551955520756
+   > gas used:            348742 (0x55246)
+   > gas price:           2.500000011 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000871855003836162 ETH
+
+Ownership transferred to 0xFFAf247326a93a32AD867E49bE325CEF438D9007
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.008628070034861022 ETH
+
+Summary
+=======
+> Total deployments:   3
+> Final cost:          0.009253455037112408 ETH
+
+~/projects/zero2hero-token main* ❯ truffle run verify Zero2HeroToken --network rinkeby                                                                                                                 44s 06:12:06 pm
+Verifying Zero2HeroToken
+Verifying proxy implementation at 0xcad26e2ae545f9c8da6575ae91fba685f3ec9257
+Pass - Verified: https://rinkeby.etherscan.io/address/0xFDCE2d2A34071F69D6F3994f134e2478Cc90078b#code
+Successfully verified 1 contract(s).
+
+> proxy contract address: 0xFDCE2d2A34071F69D6F3994f134e2478Cc90078b
+> gnosis safe: 0x9F52fe0a25dCd309266078cC89752d623e8Dc44D
+----> owner 1: 0x1069dDE6b0fdF9b17b69759f77D5d964C4791638
+----> owner 2: 0xB2BD9E771fAeea89BC182651aFEB4414A91DD35f
+
+
+> https://www.web3.university/article/leveraging-openzeppelin-contracts-and-defender-to-build-secure-multisig-owned-nfts
